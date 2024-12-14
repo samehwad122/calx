@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+p{
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 0, 98);
+}
+p span{
+    color: blue;
+}
+
+
+section{
+width: 20%;
+padding: 25px;
+background-color: #22a39f;
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+@media (max-width: 900px) {
+    section{
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    section{
+        width: 40%;
+    }
+}
+@media (max-width: 500px) {
+    section{
+        width: 60%;
+    }
+}
+@media (max-width: 300px) {
+    section{
+        width: 100%;
+    }
+}
+section #screen {
+    width: 95%;
+    height: 70px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    overflow-x: scroll;
+    color: blue;
+  
+}
+
+section .continar{
+width: 100%;
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+position: relative;
+}
+section .continar > button{
+
+    width:calc((100% - 30px) / 4);
+    height: 60px;
+    background-color:white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section .continar > button:hover{
+    background-color: dimgray;
+    color: aqua;
+    transform: scale(1.1);
+}
+
+section .continar > button:first-child , .continar > button:nth-child(2) , .continar > button:nth-child(3) , .continar > button:nth-child(4) , .continar > button:nth-child(8) , .continar > button:nth-child(12) , .continar > button:last-child , .continar > button:nth-child(16){
+    background-color: black;
+    color: white;
+    
+}
+section .continar button:last-child{
+    width: 50%;
+    height: 58px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    background-color: #424242;
+    margin-left: 5px;
+}
